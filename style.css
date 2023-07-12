@@ -1,0 +1,91 @@
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 320px;
+    max-width: 2000px;
+    margin: auto;
+    font-family: 'Merriweather', serif;
+    background-image: url(./public/bg-clouds.jpg);
+    background-position: bottom left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 30px;
+}
+
+header h1 {
+    color: whitesmoke;
+    font-size: 2rem;
+}
+
+header hr {
+    border: 1px solid rgb(255, 255, 255, 0.5);
+    margin-top: 10px;
+    width: 70%;
+}
+
+#weathers {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+article {
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 10px 5px;
+    padding: 10px;
+    border-radius: 10px;
+    width: 200px;
+    min-height: 380px;
+}
+
+.meteo__general {
+    margin-bottom: 20px;
+}
+
+.meteo__general p {
+    margin: 0;
+}
+
+.meteo__temp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.meteo__temp p {
+    margin: 0 10px 0 0;
+}
+
+.meteo__press-humi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.meteo__press-humi p {
+    margin: 0 10px;
+}

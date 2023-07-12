@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <h1>Château-Thierry</h1>
+            <hr>
+        </header>
+
+        <section id="weathers">
+            <article>
+                <div>26 Janvier 2023 - 12h00</div>
+                <div>
+                    <div>Nuageux</div>
+                    <div class="meteo__general">
+                        <img src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
+                        <p>Température: <span>1.6</span>°C</p>
+                    </div>
+                </div>
+                <div class="meteo__temp">
+                    <p>Température min: <span>-1</span>°C</p>
+                    <p>Ressentie: <span>-2</span>°C</p>
+                    <p>Température max: <span>3</span>°C</p>
+                </div>
+                <div class="meteo__press-humi">
+                    <p>Pression: <span>1024</span>hPa</p>
+                    <p>Humidité: <span>78</span>%</p>
+                </div>
+            </article>
+        </section>
+    </div>
+    <script type="module" src="/main.js"></script>
+</body>
+
+</html>
